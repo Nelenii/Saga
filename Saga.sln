@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameTemplate", "GameTemplate\GameTemplate.vcxproj", "{EA2C4A46-7DA2-428F-BDAF-CCDAA35685E1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Saga", "Saga\Saga.vcxproj", "{43DAB75D-A95F-4005-8ACF-9CF40E10438C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43DAB75D-A95F-4005-8ACF-9CF40E10438C}.Debug|x64.ActiveCfg = Debug|x64
+		{43DAB75D-A95F-4005-8ACF-9CF40E10438C}.Debug|x64.Build.0 = Debug|x64
+		{43DAB75D-A95F-4005-8ACF-9CF40E10438C}.Release|x64.ActiveCfg = Release|x64
+		{43DAB75D-A95F-4005-8ACF-9CF40E10438C}.Release|x64.Build.0 = Release|x64
+		{EA2C4A46-7DA2-428F-BDAF-CCDAA35685E1}.Debug|x64.ActiveCfg = Debug|x64
+		{EA2C4A46-7DA2-428F-BDAF-CCDAA35685E1}.Debug|x64.Build.0 = Debug|x64
+		{EA2C4A46-7DA2-428F-BDAF-CCDAA35685E1}.Release|x64.ActiveCfg = Release|x64
+		{EA2C4A46-7DA2-428F-BDAF-CCDAA35685E1}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F17B7FD4-463A-4D2A-92EB-8E84E9991DAE}
+	EndGlobalSection
+EndGlobal
+ 
