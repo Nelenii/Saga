@@ -79,7 +79,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>SAGA_PLATFORM_WINDOWS;SAGA_BUILD_DLL;SAGA_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>thirdparty\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>source;thirdparty\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -100,7 +100,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>SAGA_PLATFORM_WINDOWS;SAGA_BUILD_DLL;SAGA_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>thirdparty\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>source;thirdparty\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -125,7 +125,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>SAGA_PLATFORM_WINDOWS;SAGA_BUILD_DLL;SAGA_DISTRIBUTION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>thirdparty\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>source;thirdparty\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -148,8 +148,14 @@
   <ItemGroup>
     <ClInclude Include="source\Saga.h" />
     <ClInclude Include="source\Saga\Application.h" />
+    <ClInclude Include="source\BackupTest.h" />
     <ClInclude Include="source\Saga\Core.h" />
     <ClInclude Include="source\Saga\EntryPoint.h" />
+    <ClInclude Include="source\Saga\Events\ApplicationEvent.h" />
+    <ClInclude Include="source\Saga\Events\Event.h" />
+    <ClInclude Include="source\Saga\Events\KeyEvent.h" />
+    <ClInclude Include="source\Saga\Events\MouseEvent.h" />
+    <ClInclude Include="source\Saga\Events\WindowEvent.h" />
     <ClInclude Include="source\Saga\Log.h" />
   </ItemGroup>
   <ItemGroup>

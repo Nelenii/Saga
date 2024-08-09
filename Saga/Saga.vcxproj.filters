@@ -4,6 +4,9 @@
     <Filter Include="Saga">
       <UniqueIdentifier>{413D8C7C-2D74-8D0D-D660-7310C276090F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Saga\Events">
+      <UniqueIdentifier>{0556F2DE-710B-6BD4-FAFF-64AB66B461D8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\Saga.h" />
@@ -16,9 +19,25 @@
     <ClInclude Include="source\Saga\EntryPoint.h">
       <Filter>Saga</Filter>
     </ClInclude>
+    <ClInclude Include="source\Saga\Events\ApplicationEvent.h">
+      <Filter>Saga\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Saga\Events\Event.h">
+      <Filter>Saga\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Saga\Events\KeyEvent.h">
+      <Filter>Saga\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Saga\Events\MouseEvent.h">
+      <Filter>Saga\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Saga\Events\WindowEvent.h">
+      <Filter>Saga\Events</Filter>
+    </ClInclude>
     <ClInclude Include="source\Saga\Log.h">
       <Filter>Saga</Filter>
     </ClInclude>
+    <ClInclude Include="source\BackupTest.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Saga\Application.cpp">

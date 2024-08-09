@@ -29,6 +29,7 @@ project "Saga"
 
 	includedirs
 	{
+		"%{prj.name}/source",
 		"%{prj.name}/thirdparty/spdlog/include"
 	}
 
