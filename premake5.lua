@@ -21,6 +21,9 @@ project "Saga"
 	targetdir ("binaries/" .. outputDirectory .. "/%{prj.name}")
 	objdir ("intermediate/" .. outputDirectory .. "/%{prj.name}")
 
+	pchheader "SagaPrecompiledHeaders.h"
+	pchsource "Saga/source/SagaPrecompiledHeaders.cpp"
+
 	files
 	{
 		"%{prj.name}/source/**.h",

@@ -1,3 +1,4 @@
+#include "SagaPrecompiledHeaders.h"
 #include "Application.h"
 
 #include "Events/WindowEvent.h"

@@ -76,7 +76,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>SagaPrecompiledHeaders.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>SAGA_PLATFORM_WINDOWS;SAGA_BUILD_DLL;SAGA_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>source;thirdparty\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -97,7 +98,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>SagaPrecompiledHeaders.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>SAGA_PLATFORM_WINDOWS;SAGA_BUILD_DLL;SAGA_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>source;thirdparty\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -122,7 +124,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>SagaPrecompiledHeaders.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>SAGA_PLATFORM_WINDOWS;SAGA_BUILD_DLL;SAGA_DISTRIBUTION;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>source;thirdparty\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -146,9 +149,9 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="source\BackupTest.h" />
     <ClInclude Include="source\Saga.h" />
     <ClInclude Include="source\Saga\Application.h" />
-    <ClInclude Include="source\BackupTest.h" />
     <ClInclude Include="source\Saga\Core.h" />
     <ClInclude Include="source\Saga\EntryPoint.h" />
     <ClInclude Include="source\Saga\Events\ApplicationEvent.h" />
@@ -157,10 +160,14 @@
     <ClInclude Include="source\Saga\Events\MouseEvent.h" />
     <ClInclude Include="source\Saga\Events\WindowEvent.h" />
     <ClInclude Include="source\Saga\Log.h" />
+    <ClInclude Include="source\SagaPrecompiledHeaders.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Saga\Application.cpp" />
     <ClCompile Include="source\Saga\Log.cpp" />
+    <ClCompile Include="source\SagaPrecompiledHeaders.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

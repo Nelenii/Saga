@@ -9,6 +9,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="source\BackupTest.h" />
     <ClInclude Include="source\Saga.h" />
     <ClInclude Include="source\Saga\Application.h">
       <Filter>Saga</Filter>
@@ -37,7 +38,7 @@
     <ClInclude Include="source\Saga\Log.h">
       <Filter>Saga</Filter>
     </ClInclude>
-    <ClInclude Include="source\BackupTest.h" />
+    <ClInclude Include="source\SagaPrecompiledHeaders.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="source\Saga\Application.cpp">
@@ -46,5 +47,6 @@
     <ClCompile Include="source\Saga\Log.cpp">
       <Filter>Saga</Filter>
     </ClCompile>
+    <ClCompile Include="source\SagaPrecompiledHeaders.cpp" />
   </ItemGroup>
 </Project>

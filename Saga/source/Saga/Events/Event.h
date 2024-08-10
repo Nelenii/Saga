@@ -2,9 +2,6 @@
 
 #include "Saga/Core.h"
 
-#include <string>
-#include <functional>
-
 
 
 namespace Saga
